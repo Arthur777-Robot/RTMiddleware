@@ -1,0 +1,16 @@
+﻿2013/07/25 14:41:52 にビルドを開始しました。
+     1>ノード 3 上のプロジェクト "C:\Users\Arthur\Desktop\OpenRTM\workspace\ServiceOROCHI\build\ALL_BUILD.vcxproj" (build ターゲット)。
+     1>InitializeBuildStatus:
+         "AlwaysCreate" が指定されたため "Win32\Debug\ALL_BUILD\ALL_BUILD.unsuccessfulbuild" を作成しています。
+       CustomBuild:
+         Building Custom Rule C:/Users/Arthur/Desktop/OpenRTM/workspace/ServiceOROCHI/CMakeLists.txt
+         CMake does not need to re-run because C:\Users\Arthur\Desktop\OpenRTM\workspace\ServiceOROCHI\build\CMakeFiles\generate.stamp is up-to-date.
+         Build all projects
+       FinalizeBuildStatus:
+         ファイル "Win32\Debug\ALL_BUILD\ALL_BUILD.unsuccessfulbuild" を削除しています。
+         "Win32\Debug\ALL_BUILD\ALL_BUILD.lastbuildstate" のタッチ タスクを実行しています。
+     1>プロジェクト "C:\Users\Arthur\Desktop\OpenRTM\workspace\ServiceOROCHI\build\ALL_BUILD.vcxproj" (build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:00.15

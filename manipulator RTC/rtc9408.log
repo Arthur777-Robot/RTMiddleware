@@ -1,0 +1,19 @@
+2013-12-16 13:08:51,203 manager INFO 1.1.0
+2013-12-16 13:08:51,204 manager INFO Copyright (C) 2003-2010
+2013-12-16 13:08:51,204 manager INFO   Noriaki Ando
+2013-12-16 13:08:51,204 manager INFO   Intelligent Systems Research Institute, AIST
+2013-12-16 13:08:51,204 manager INFO Manager starting.
+2013-12-16 13:08:51,204 manager INFO Starting local logging.
+2013-12-16 13:08:51,221 manager.namingmanager INFO NameServer connection succeeded: corba/localhost
+2013-12-16 13:08:53,233 ManagerServant INFO Master manager not found
+2013-12-16 13:08:53,239 manager ERROR Traceback (most recent call last):
+  File "C:\Python26\lib\site-packages\OpenRTM_aist\Manager.py", line 1751, in initManagerServant
+    reffile = file(self._config.getProperty("manager.refstring_path"),'w')
+IOError: [Errno 2] No such file or directory: '/var/log/rtcmanager.ref'
+
+2013-12-16 13:09:33,631 SdoServiceAdmin WARNING No available SDO service in the factory: 
+2013-12-16 13:09:33,631 SdoServiceAdmin ERROR type  already exists.
+2013-12-16 13:09:33,634 SdoServiceAdmin WARNING No available SDO service in the factory: IDL:OpenRTM/ComponentObserver:1.0
+2013-12-16 13:09:33,635 SdoServiceAdmin ERROR type 5454f604-7850-4c52-9391-7f844301d011 already exists.
+2013-12-16 13:09:39,703 OROCHI_InterfaceMiddle ERROR interface matched with new descriptor: ServiceOROCHI0.port.OROCHI_InterfaceMiddle.required.ManipulatorCommonInterface_Middle.interfaceMiddle
+2013-12-16 13:19:05,119 OROCHI_InterfaceMiddle ERROR interface matched with new descriptor: ServiceOROCHI0.port.OROCHI_InterfaceMiddle.required.ManipulatorCommonInterface_Middle.interfaceMiddle

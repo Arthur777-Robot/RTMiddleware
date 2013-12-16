@@ -1,0 +1,17 @@
+﻿2013/07/25 14:41:52 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\Users\Arthur\Desktop\OpenRTM\workspace\ServiceOROCHI\build\ZERO_CHECK.vcxproj" (build ターゲット)。
+     1>PrepareForBuild:
+         ディレクトリ "C:\Users\Arthur\Desktop\OpenRTM\workspace\ServiceOROCHI\build\Debug\" を作成しています。
+       InitializeBuildStatus:
+         "AlwaysCreate" が指定されたため "Win32\Debug\ZERO_CHECK\ZERO_CHECK.unsuccessfulbuild" を作成しています。
+       CustomBuild:
+         Checking Build System
+         CMake does not need to re-run because C:/Users/Arthur/Desktop/OpenRTM/workspace/ServiceOROCHI/build/CMakeFiles/generate.stamp is up-to-date.
+       FinalizeBuildStatus:
+         ファイル "Win32\Debug\ZERO_CHECK\ZERO_CHECK.unsuccessfulbuild" を削除しています。
+         "Win32\Debug\ZERO_CHECK\ZERO_CHECK.lastbuildstate" のタッチ タスクを実行しています。
+     1>プロジェクト "C:\Users\Arthur\Desktop\OpenRTM\workspace\ServiceOROCHI\build\ZERO_CHECK.vcxproj" (build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:00.20

@@ -1,0 +1,54 @@
+# ServiceOROCHI CMake config file
+#
+# This file sets the following variables:
+# ServiceOROCHI_FOUND - Always TRUE.
+# ServiceOROCHI_INCLUDE_DIRS - Directories containing the ServiceOROCHI include files.
+# ServiceOROCHI_IDL_DIRS - Directories containing the ServiceOROCHI IDL files.
+# ServiceOROCHI_LIBRARIES - Libraries needed to use ServiceOROCHI.
+# ServiceOROCHI_DEFINITIONS - Compiler flags for ServiceOROCHI.
+# ServiceOROCHI_VERSION - The version of ServiceOROCHI found.
+# ServiceOROCHI_VERSION_MAJOR - The major version of ServiceOROCHI found.
+# ServiceOROCHI_VERSION_MINOR - The minor version of ServiceOROCHI found.
+# ServiceOROCHI_VERSION_REVISION - The revision version of ServiceOROCHI found.
+# ServiceOROCHI_VERSION_CANDIDATE - The candidate version of ServiceOROCHI found.
+
+message(STATUS "Found ServiceOROCHI-@PROJECT_VERSION@")
+set(ServiceOROCHI_FOUND TRUE)
+
+find_package(<dependency> REQUIRED)
+
+#set(ServiceOROCHI_INCLUDE_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@"
+#    ${<dependency>_INCLUDE_DIRS}
+#    )
+#
+#set(ServiceOROCHI_IDL_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@/idl")
+set(ServiceOROCHI_INCLUDE_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@"
+    ${<dependency>_INCLUDE_DIRS}
+    )
+set(ServiceOROCHI_IDL_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@/idl")
+
+
+if(WIN32)
+    set(ServiceOROCHI_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_STATIC_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+else(WIN32)
+    set(ServiceOROCHI_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_SHARED_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+endif(WIN32)
+
+set(ServiceOROCHI_DEFINITIONS ${<dependency>_DEFINITIONS})
+
+set(ServiceOROCHI_VERSION @PROJECT_VERSION@)
+set(ServiceOROCHI_VERSION_MAJOR @PROJECT_VERSION_MAJOR@)
+set(ServiceOROCHI_VERSION_MINOR @PROJECT_VERSION_MINOR@)
+set(ServiceOROCHI_VERSION_REVISION @PROJECT_VERSION_REVISION@)
+set(ServiceOROCHI_VERSION_CANDIDATE @PROJECT_VERSION_CANDIDATE@)
+
